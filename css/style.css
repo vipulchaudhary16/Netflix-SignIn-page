@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --box-color:#141414b9;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+body{
+    background: url(../items/bg.png) ;
+}
+
+.logo{
+    padding: 1rem 3rem;
+}
+.logo img{
+    z-index: 2;
+    width: 160px;
+}
+
+.main-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-in-page h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.log-in-page{
+    padding: 2rem 3rem;
+    background: var(--box-color);
+    width: 20%;
+    padding-bottom: 8rem;
+    margin-bottom: 6rem;
+}
+
+.form-before-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-before-btn input{
+    height: 45px;
+    margin: 0.6rem 0;
+    width: 295px;
+    border-radius: 7px;
+    outline: none;
+    padding: 2px 5px;
+}
+
+.btn{
+    margin-top: 1.9rem;
+}
+
+.form-before-btn button{
+    height: 45px;
+    margin: 3rem , 0; 
+    width: 295px;
+    border-radius: 7px;
+    outline: none;
+    padding: 2px 5px;
+    background: red;
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.remeber-help .remember
+{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.remeber-help .remember label{
+    color: rgba(255, 255, 255, 0.450);
+}
+
+label:hover{
+    cursor: pointer;
+}
+.check-box:hover{
+    cursor: pointer;
+
+}
+.remeber-help .help{
+    float: right;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.facebook img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.facebook a{
+    margin-left: 5px;
+    text-align: center;
+}
+
+.para p{
+    text-align: left;
+}
+
+footer{
+    background: var(--box-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    
+}
+
+.footer-box{
+    padding: 2rem 0;
+}
+
+.footer-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 1rem 0;
+}
+
+.dim-txt{
+    color: rgba(255, 255, 255, 0.450);
+}
+
+.blue-txt{
+    color: blue;
+}
+
+@media(max-width:500px)
+{
+    body{
+        background: black;
+    }
+    .logo{
+        padding-top: 0.6rem;
+        padding-left: 0.8rem;        
+    }
+
+    .logo img{
+        width: 95px;
+        height: 37px;
+    }
+
+    .facebook{
+        margin: 2rem 0;
+    }
+
+    .log-in-page{
+        padding: 0;
+        width: 95%;
+        background: none;
+        margin-bottom: 5.5rem;
+    }
+
+    .footer-box{
+        padding: 2rem 1rem;
+    }
+
+    .footer-items{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
